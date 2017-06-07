@@ -1,0 +1,24 @@
+{
+    "name": "jacksunny/ossfs",
+    "description": "aliyun oss adapter for laravel file system 5.2+",
+    "type": "library",
+    "require": {
+        "johnlui/aliyun-oss": "^2.2",
+        "laravel/framework": "5.4.*"
+    },
+    "authors": [
+        {
+            "name": "jacksunny",
+            "email": "jacksunny2020@126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "Jacksunny\\OssFs\\": "src/"
+        }
+    }
+}
