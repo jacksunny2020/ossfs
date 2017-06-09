@@ -1,5 +1,5 @@
 # ossfs
-laravel file system plugin for aliyun oss,you may use oss as normal laravel file system mode
+laravel file system plugin based-on aliyun oss,you may use oss as normal laravel file system mode
 
 1. install package
    composer require "jacksunny/ossfs":"dev-master"
