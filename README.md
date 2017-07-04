@@ -24,5 +24,5 @@ laravel file system plugin based-on aliyun oss,you may use oss as normal laravel
    $content = "Contents";
    $result =  Storage::disk('oss')->put($filename, $content);
    or
-   $result = Storage::disk('oss')->putFile($filename, $request->file('logo')->getRealPath());
+   $result = Storage::disk('oss')->put($filename, $request->file('logo')->getRealPath());
    </pre>
