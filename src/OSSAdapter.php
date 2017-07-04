@@ -240,7 +240,8 @@ class OSSAdapter extends AbstractAdapter {
      */
     public function update($path, $contents, \League\Flysystem\Config $config) {
         //todo 需要调用阿里云oss类方法实现，如果不支持请抛出异常
-        return $this->write($path, $contents, $config);
+        $this->ossClient->setBucket($this->defaultBucket);
+        return $this->ossClient->uploadFile($path, $contents);
     }
 
     /**
